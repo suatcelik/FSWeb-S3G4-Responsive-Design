@@ -1,0 +1,146 @@
+@import url("./reset.css");
+
+* /*{
+  border: 1px solid lime !important;
+}
+/* CSS stillerinizi buraya girin */
+p {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+header,
+footer {
+  background-color: #ccc;
+  padding: 2rem 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+}
+
+nav > ul {
+  display: flex;
+}
+
+.menu-item {
+  display: inline-block;
+  padding: 1rem;
+  background-color: rgb(4, 36, 48);
+  color: white;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background-color 0.3s ease-out;
+}
+
+.menu-item:hover {
+  background-color: rgb(232, 232, 232);
+  color: rgb(4, 36, 48);
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* TOOLING 
+START ----------- */
+
+.row {
+  display: flex;
+  /* flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch; */
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  /*
+  justify-content: flex-start;
+  align-items: stretch; */
+}
+
+/* --------- END TOOLING 
+ ----------- */
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+.hero-text p {
+  line-height: 1.5;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-item {
+  flex-basis: 250px;
+  transition: opacity 0.3s ease-out;
+}
+
+.project-item:hover {
+  opacity: 0.8;
+}
+
+.project-title {
+  text-align: center;
+  padding: 1rem;
+}
+
+.img-con img {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .container {
+    background: gray;
+  }
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .container header nav a {
+    margin-bottom: 1rem;
+  }
+}
